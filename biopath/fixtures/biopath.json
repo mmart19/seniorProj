@@ -1,0 +1,44 @@
+[
+    {
+        "model": "biopath.pathway",
+        "pk": 1,
+        "fields": {
+            "modelName": "Glycolysis"
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Adenosine Triphosphate",
+            "enzymeAbbr": "ATP",
+            "reversible": "reversible",
+            "xCoor": 1.0,
+            "yCoor": 1.0
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.substrates",
+        "pk": 1,
+        "fields": {
+            "substrate": "Hexokinase",
+            "abbr": "HK",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    }
+]
