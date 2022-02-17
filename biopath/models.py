@@ -11,7 +11,7 @@ class Pathway(models.Model):
       public = models.BooleanField(default=False)
 
       def __str__(self):
-            return str(self.id) + " " + str(self.modelName)
+            return "Pathway: " + str(self.id) + " " + str(self.modelName)
       
 class Module(models.Model):
 	modelID = models.ForeignKey(Pathway, on_delete=models.CASCADE)
@@ -22,8 +22,8 @@ class Module(models.Model):
 	yCoor = models.IntegerField(default=0)
 
 	def __str__(self):
-		return_val = str(id) + str(self.modelID) + str(self.enzyme) + str(self.enzymeAbbr) + str(self.reversible) + str(self.xCoor) + str(self.yCoor) + str(self.enzWeight)
-		return return_val
+		return "Module: " + str(self.enzyme) + " " + str(self.enzymeAbbr) + " " + str(self.reversible) + " " + str(self.xCoor) + " " + str(self.yCoor) 
+
 class Products(models.Model):
 	moduleID = models.ForeignKey(Module, on_delete=models.CASCADE)
 	product = models.CharField(max_length = 200)
@@ -31,7 +31,7 @@ class Products(models.Model):
 	modelID = models.IntegerField(default=1)
 
 	def __str__(self):
-		return str(id) + str(self.moduleID) + str(self.product) + str(self.abbr)
+		return "Product: " + str(self.product) + " " + str(self.abbr)
 
 class Substrates(models.Model):
 	moduleID = models.ForeignKey(Module, on_delete=models.CASCADE)
@@ -40,4 +40,4 @@ class Substrates(models.Model):
 	modelID = models.IntegerField(default=1)
 
 	def __str__(self):
-		return str(id) + str(self.moduleID) + str(self.substrate) + str(self.abbr)
+		return "Substrate: " + str(self.substrate) + " " + str(self.abbr)
