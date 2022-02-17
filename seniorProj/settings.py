@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'biopath',
     'rest_framework',
+    'biopath',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

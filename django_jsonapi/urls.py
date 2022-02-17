@@ -1,6 +1,6 @@
-from django.urls import path, include, 
-from . import views
+from django.urls import include, pathlib
 from rest_framework import routers
+from biopath import views
 
 router = routers.DefaultRouter()
 router.register(r'pathways', views.PathWayViewSet)
