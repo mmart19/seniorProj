@@ -7,12 +7,11 @@ from django.contrib.auth.models import User
 # Create your models here.
 
 class Pathway(models.Model):
-      userID = models.ForeignKey(User, on_delete=models.CASCADE)
       modelName = models.CharField(max_length=200)
       public = models.BooleanField(default=False)
 
       def __str__(self):
-            return str(self.id) + " " + str(self.userID_id) + " " + str(self.modelName)
+            return str(self.id) + " " + str(self.modelName)
       
 class Module(models.Model):
 	modelID = models.ForeignKey(Pathway, on_delete=models.CASCADE)
@@ -21,9 +20,6 @@ class Module(models.Model):
 	reversible = models.CharField(max_length = 200 )
 	xCoor = models.IntegerField(default=0)
 	yCoor = models.IntegerField(default=0)
-	enzWeight = models.IntegerField(default=1)
-	deltaG = models.FloatField(default=-1.0)
-	deltaGNaughtPrime = models.FloatField(default=1.0)
 
 	def __str__(self):
 		return_val = str(id) + str(self.modelID) + str(self.enzyme) + str(self.enzymeAbbr) + str(self.reversible) + str(self.xCoor) + str(self.yCoor) + str(self.enzWeight)
