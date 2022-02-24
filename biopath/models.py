@@ -48,5 +48,5 @@ class Cofactors(models.Model):
 	cofactorAbbr = models.CharField(max_length=200)
 	modelID = models.IntegerField(default=1)
 
-	def __str_(self):
+	def __str__(self):
 		return "Cofactor: " + str(self.cofactor) + " " + str(self.cofactorAbbr)
