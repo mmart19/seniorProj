@@ -9,19 +9,19 @@ def index(request):
       return HttpResponse("Hello world from django backend")
 
 #Views that handle the HTTP requests for models
-class PathWayViewSet(viewsets.ModelViewset):
+class PathWayViewSet(viewsets.ModelViewSet):
       queryset = Pathway.objects.all()
       serializer_class = PathwaySerializer
 
-class ModuleViewSet(viewsets.ModelViewset):
+class ModuleViewSet(viewsets.ModelViewSet):
       queryset = Module.objects.all()
       serializer_class = ModuleSerializer
 
-class ProductsViewSet(viewsets.ModelViewset):
+class ProductsViewSet(viewsets.ModelViewSet):
       queryset = Products.objects.all()
       serializer_class = ProductsSerializer
 
-class SubstratesViewSet(viewsets.ModelViewset):
+class SubstratesViewSet(viewsets.ModelViewSet):
       queryset = Substrates.objects.all()
       serializer_class = SubstratesSerializer
 

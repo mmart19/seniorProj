@@ -5,7 +5,7 @@ from biopath.models import Pathway, Module, Products, Substrates
 class PathwaySerializer(serializers.HyperlinkedModelSerializer):
       class Meta:
             model = Pathway
-            fields = ('modelName')
+            fields = ('modelName', 'id')
 
 class ModuleSerializer(serializers.HyperlinkedModelSerializer):
       class Meta:

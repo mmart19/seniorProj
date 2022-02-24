@@ -41,3 +41,12 @@ class Substrates(models.Model):
 
 	def __str__(self):
 		return "Substrate: " + str(self.substrate) + " " + str(self.abbr)
+
+class Cofactors(models.Model):
+	moduleID = models.ForeignKey(Module, on_delete=models.CASCADE)
+	cofactor = models.CharField(max_length=200)
+	cofactorAbbr = models.CharField(max_length=200)
+	modelID = models.IntegerField(default=1)
+
+	def __str_(self):
+		return "Cofactor: " + str(self.cofactor) + " " + str(self.cofactorAbbr)
