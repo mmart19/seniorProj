@@ -30,7 +30,7 @@ class DataTest(TestCase):
             self.assertEqual(len(products), 1)
             self.assertEqual(len(substrates), 1)
             self.assertEqual(len(modules), 1)
-
+            print(pathways[0])
             self.assertEqual(pathways[0].__str__(), "Pathway: 1 Glycolysis")
             self.assertEqual(modules[0].__str__(), "Module: Adenosine Diphosphate ADP reversible 1 1")
             self.assertEqual(products[0].__str__(), "Product: Adenosine Triphosphate ATP")

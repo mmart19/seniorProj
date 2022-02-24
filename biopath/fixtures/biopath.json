@@ -12,11 +12,260 @@
         "pk": 1,
         "fields": {
             "modelID": 1,
-            "enzyme": "Adenosine Triphosphate",
-            "enzymeAbbr": "ATP",
+            "enzyme": "Hexokinase",
+            "enzymeAbbr": "HK",
+            "reversible": "irreversible",
+            "xCoor": 0.0,
+            "yCoor": 1.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Phosphoglucose_isomerase",
+            "enzymeAbbr": "PGI",
+            "reversible": "reversible",
+            "xCoor": 0.0,
+            "yCoor": 2.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Phosphofructokinase",
+            "enzymeAbbr": "PFK",
+            "reversible": "irreversible",
+            "xCoor": 0.0,
+            "yCoor": 3.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Aldolase",
+            "enzymeAbbr": "ALDO",
+            "reversible": "reversible",
+            "xCoor": 0.0,
+            "yCoor": 4.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Triosephosphate_isomerase",
+            "enzymeAbbr": "TPI",
+            "reversible": "reversible",
+            "xCoor": -1.0,
+            "yCoor": 5.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Glyceraldehyde_phosphate_dehydrogenase",
+            "enzymeAbbr": "GAPDH",
             "reversible": "reversible",
             "xCoor": 1.0,
-            "yCoor": 1.0
+            "yCoor": 5.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Phosphoglycerate_kinase",
+            "enzymeAbbr": "PGK",
+            "reversible": "reversible",
+            "xCoor": 1.0,
+            "yCoor": 6.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Phosphoglycerate_mutase",
+            "enzymeAbbr": "PGM",
+            "reversible": "reversible",
+            "xCoor": 1.0,
+            "yCoor": 7.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Enolase",
+            "enzymeAbbr": "ENO",
+            "reversible": "reversible",
+            "xCoor": 1.0,
+            "yCoor": 8.0
+        }
+    },
+
+    {
+        "model": "biopath.module",
+        "pk": 1,
+        "fields": {
+            "modelID": 1,
+            "enzyme": "Pyruvate_kinase",
+            "enzymeAbbr": "PK",
+            "reversible": "irreversible",
+            "xCoor": 1.0,
+            "yCoor": 9.0
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
+        }
+    },
+
+    {
+        "model": "biopath.products",
+        "pk": 1,
+        "fields": {
+            "product": "Adenosine Diphosphate",
+            "abbr": "ADP",
+            "moduleID": 1,
+            "modelID": 1
         }
     },
 
