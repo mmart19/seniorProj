@@ -3,12 +3,12 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from biopath.models import Pathway, Module, Products, Substrates
 from biopath.serializers import PathwaySerializer, ModuleSerializer, ProductsSerializer, SubstratesSerializer
-from rest_framework import viewsets
+from rest_framework import viewsets, generics
 from rest_framework.decorators import action
 from rest_framework.parsers import JSONParser
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
-from rest_framework_swagger.views import get_swagger_view
+
 
 
 # Create your views here.
@@ -16,11 +16,11 @@ def index(request):
       return HttpResponse("Hello world from django backend")
 
 #Views that handle the HTTP requests for models
+# These are only used to view data
+
 class PathWayViewSet(viewsets.ModelViewSet):
       queryset = Pathway.objects.all()
       serializer_class = PathwaySerializer
-
-      #@action(methods=['post'], detail=True)
 
 class ModuleViewSet(viewsets.ModelViewSet):
       queryset = Module.objects.all()
@@ -33,6 +33,25 @@ class ProductsViewSet(viewsets.ModelViewSet):
 class SubstratesViewSet(viewsets.ModelViewSet):
       queryset = Substrates.objects.all()
       serializer_class = SubstratesSerializer
+
+
+# These views are used for API documentation
+class PathwayList(generics.ListCreateAPIView):
+      queryset = Pathway.objects.all()
+      serializer_class = PathwaySerializer
+
+class PathwayDetail(generics.RetrieveUpdateDestroyAPIView):
+      queryset = Pathway.objects.all()
+      serializer_class = PathwaySerializer
+
+class SubstratesList(generics.ListCreateAPIView):
+      queryset = Substrates.objects.all()
+      serializer_class = SubstratesSerializer
+
+class SubstratesDetail(generics.RetrieveUpdateDestroyAPIView):
+      queryset = Substrates.objects.all()
+      serializer_class = SubstratesSerializer
+
 
 
       

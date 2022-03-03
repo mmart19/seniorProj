@@ -27,7 +27,10 @@ class ProductsSerializer(serializers.HyperlinkedModelSerializer):
             model = Products
             fields = ('product', 'abbr')
 
+
 class SubstratesSerializer(serializers.HyperlinkedModelSerializer):
       class Meta:
             model = Substrates
             fields = ('substrate', 'abbr')
+
+
