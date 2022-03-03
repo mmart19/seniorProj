@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from rest_framework import routers
+from rest_framework import routers, permissions
 from biopath import views
+from rest_framework.schemas import get_schema_view
+from django.views.generic import TemplateView
+
 
 router = routers.DefaultRouter()
 router.register(r'pathways', views.PathWayViewSet)
