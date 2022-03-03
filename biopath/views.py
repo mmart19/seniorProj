@@ -1,3 +1,4 @@
+from msilib import schema
 from django.shortcuts import render
 from django.http import HttpResponse
 from biopath.models import Pathway, Module, Products, Substrates
@@ -7,6 +8,7 @@ from rest_framework.decorators import action
 from rest_framework.parsers import JSONParser
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
+from rest_framework_swagger.views import get_swagger_view
 
 
 # Create your views here.
@@ -31,5 +33,6 @@ class ProductsViewSet(viewsets.ModelViewSet):
 class SubstratesViewSet(viewsets.ModelViewSet):
       queryset = Substrates.objects.all()
       serializer_class = SubstratesSerializer
+
 
       
