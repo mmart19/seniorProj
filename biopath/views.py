@@ -1,5 +1,5 @@
 from msilib import schema
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 from django.http import HttpResponse
 from biopath.models import Pathway, Module, Products, Substrates
 from biopath.serializers import PathwaySerializer, ModuleSerializer, ProductsSerializer, SubstratesSerializer
@@ -17,6 +17,11 @@ def index(request):
 
 #Views that handle the HTTP requests for models
 # These are only used to view data
+'''
+def detail(request, pathway_id):
+      pathway = get_object_or_404(Pathway, pk=pathway_id)
+      return render(request, {'Pathway:': pathway})
+'''
 
 class PathWayViewSet(viewsets.ModelViewSet):
       queryset = Pathway.objects.all()

@@ -1,4 +1,5 @@
 from pathlib import Path
+from xmlrpc.client import ResponseError
 from rest_framework_json_api import serializers
 from biopath.models import Pathway, Module, Products, Substrates
 
@@ -16,6 +17,7 @@ class PathwaySerializer(serializers.HyperlinkedModelSerializer):
             instance.modelName = validated_data.get('modelName', instance.modelName)
             instance.save()
             return instance
+      
 
 class ModuleSerializer(serializers.HyperlinkedModelSerializer):
       class Meta:
