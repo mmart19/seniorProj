@@ -40,6 +40,10 @@ class SubstratesViewSet(viewsets.ModelViewSet):
       serializer_class = SubstratesSerializer
 
 
+# Error handling for API's
+
+
+
 # These views are used for API documentation
 class PathwayList(generics.ListCreateAPIView):
       queryset = Pathway.objects.all()
