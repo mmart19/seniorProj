@@ -22,10 +22,12 @@ from drf_yasg import openapi
 
 
 router = routers.DefaultRouter()
-router.register(r'pathways', views.PathWayViewSet)
-router.register(r'modules', views.ModuleViewSet)
-router.register(r'products', views.ProductsViewSet)
-router.register(r'substrates', views.SubstratesViewSet)
+# The basename attribute is required but is somewhat arbitrary. Still search for the pathway using
+# /localhost:8000/pathways as an example
+router.register(r'pathways', views.PathWayViewSet, basename='MyPathways')
+router.register(r'modules', views.ModuleViewSet, basename='MyModules')
+router.register(r'products', views.ProductsViewSet, basename='MyProducts')
+router.register(r'substrates', views.SubstratesViewSet, basename='MySubstrates')
 
 schema_view = get_schema_view(
    openapi.Info(
