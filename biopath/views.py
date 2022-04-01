@@ -110,6 +110,10 @@ class SubstratesViewSet(viewsets.ModelViewSet):
       # Note: safe=False is needed in order for non-dict objects to be serialized
 
 
+# Error handling for API's
+
+
+
 # These views are used for API documentation
 class PathwayList(generics.ListCreateAPIView):
       queryset = Pathway.objects.all()

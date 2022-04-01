@@ -29,7 +29,7 @@ router.register(r'modules', views.ModuleViewSet, basename='MyModules')
 router.register(r'products', views.ProductsViewSet, basename='MyProducts')
 router.register(r'substrates', views.SubstratesViewSet, basename='MySubstrates')
 
-schema_view = get_schema_view(
+schema_view = get_schema_view(D
    openapi.Info(
       title="Biopath API",
       default_version='v1',
